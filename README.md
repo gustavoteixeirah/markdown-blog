@@ -36,3 +36,23 @@ npm run build
 You can preview the production build with `npm run preview`.
 
 > To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+
+
+
+
+`pnpm run build && pnpm run preview`
+
+
+
+If problems with node version:
+
+```shell
+# install nvm
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
+# make nvm command available in current shell session
+source ~/.nvm/nvm.sh
+# install Node.js v16
+nvm install 16
+# use Node.js v16 for this shell session
+nvm use 16
+```
