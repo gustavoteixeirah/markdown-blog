@@ -2,6 +2,6 @@
 
 import { dev } from '$app/environment'
 
-export const title = 'Shakespear'
-export const description = 'Sveltekit blog for posts'
+export const title = 'Kode GT'
+export const description = 'Blog posts and other stuff by Kode GT'
 export const url = dev ? 'http://localhost:5173/' : 'url'

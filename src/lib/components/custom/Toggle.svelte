@@ -1,7 +1,7 @@
 <script>
 	import { fly } from 'svelte/transition'
 	// import { Moon, Sun } from 'lucide-svelte'
-	import { theme, toggleTheme } from '$lib/theme'
+	import { theme, toggleTheme } from '$lib/theme.js'
 </script>
 
 <button on:click={toggleTheme} aria-label='Toggle theme'>

@@ -1,19 +1,18 @@
 <script>
-	import Footer from './Footer.svelte'
-	import Header from './Header.svelte'
+	import Footer from '$lib/components/custom/Footer.svelte'
+	import Header from '$lib/components/custom/Header.svelte'
 
 	import 'open-props/style'
 	import 'open-props/normalize'
 	import 'open-props/buttons'
 
 	import '../app.css'
-	import PageTransition from './Transition.svelte'
+	import PageTransition from '$lib/components/custom/Transition.svelte'
 
 	export let data
 </script>
 
 <div class='layout'>
-	<!-- Header -->
 	<Header />
 
 	<main>
