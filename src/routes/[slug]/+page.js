@@ -1,14 +1,13 @@
-import { error } from '@sveltejs/kit'
-
 export async function load({ params }) {
 	try {
-		const post = await import(`../../posts/${params.slug}.md`)
+		const postSlug = Array.isArray(params.slug) ? params.slug.join('/') : params.slug;
+		const post = await import(`../../posts/${postSlug}.md`);
 
 		return {
 			content: post.default,
 			meta: post.metadata
-		}
-	} catch (e) {
-		throw error(404, `Could not find ${params.slug}`)
+		};
+	} catch(e) {
+		throw error(404, `Could not find ${params.slug}`);
 	}
 }
